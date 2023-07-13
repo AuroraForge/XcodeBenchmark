@@ -1,4 +1,4 @@
-name: XcodeBenchmark-macOS-XL
+name: XcodeBenchmark-macOS-Cirrus
 on:
     push:
         branches:
@@ -7,7 +7,7 @@ on:
 jobs:
     benchmark:
         name: Run XcodeBenchmark
-        runs-on: macos-latest
+        runs-on: ghcr.io/cirruslabs/macos-ventura-xcode:latest
         steps:
             - name: 🛎 Checkout
               uses: actions/checkout@v2

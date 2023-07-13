@@ -9,6 +9,8 @@ jobs:
         name: Run XcodeBenchmark
         runs-on: macos-latest
         steps:
-            - name: Start benchmark.sh
+            - name: 🛎 Checkout
+              uses: actions/checkout@v2
+            - name: ⏱️ Start benchmark
               run: chmod +x benchmark.sh && ./benchmark.sh
               shell: bash

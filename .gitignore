@@ -48,3 +48,4 @@ playground.xcworkspace
 # Carthage/Checkouts
 
 Carthage/Build
+.github/.DS_Store

@@ -1,0 +1,14 @@
+name: XcodeBenchmark-macOS
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    benchmark:
+        name: Run XcodeBenchmark
+        runs-on: macos-latest
+        steps:
+            - name: Start benchmark.sh
+              run: chmod +x benchmark.sh && ./benchmark.sh
+              shell: zsh

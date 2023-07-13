@@ -2,7 +2,7 @@ name: XcodeBenchmark-macOS
 on:
     push:
         branches:
-            - master
+            - disabled
 
 jobs:
     benchmark:

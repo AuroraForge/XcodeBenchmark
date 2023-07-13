@@ -11,4 +11,4 @@ jobs:
         steps:
             - name: Start benchmark.sh
               run: chmod +x benchmark.sh && ./benchmark.sh
-              shell: zsh
+              shell: bash

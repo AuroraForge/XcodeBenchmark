@@ -7,9 +7,7 @@ on:
 jobs:
     benchmark:
         name: Run XcodeBenchmark
-        runs-on: 
-            group: Default
-            labels: ams-test
+        runs-on: [self-hosted, ams-test]
         steps:
             - name: 🛎 Checkout
               uses: actions/checkout@v2

@@ -1,9 +1,5 @@
 name: XcodeBenchmark-macOS-Cirrus
-on:
-    push:
-        branches:
-            - disabled
-
+on: [push]
 jobs:
     benchmark:
         name: Run XcodeBenchmark

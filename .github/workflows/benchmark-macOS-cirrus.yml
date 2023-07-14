@@ -1,16 +1,16 @@
 name: XcodeBenchmark-macOS-Cirrus
 on:
   push:
-      branches:
-          - master
+    branches:
+      - master
 
 jobs:
   benchmark:
-      name: Run XcodeBenchmark
-      runs-on: ghcr.io/cirruslabs/macos-ventura-xcode:latest
-        steps:
-            - name: 🛎 Checkout
-              uses: actions/checkout@v2
-            - name: ⏱️ Start benchmark
-              run: chmod +x benchmark.sh && ./benchmark.sh
-              shell: bash
+    name: Run XcodeBenchmark
+    runs-on: ghcr.io/cirruslabs/macos-ventura-xcode:latest
+    steps:
+      - name: 🛎 Checkout
+        uses: actions/checkout@v2
+      - name: ⏱️ Start benchmark
+        run: chmod +x benchmark.sh && ./benchmark.sh
+        shell: bash
